@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Powershell project to Azure Function App - AZUREAPPSERVICE_PUBLISHPROFILE_5DDF08D7A058405FA3ABD162612E522A # Change cippdh4c to your Function App Name
+name: Build and deploy Powershell project to Azure Function App - cippg6a4z # Change cippdh4c to your Function App Name
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'AZUREAPPSERVICE_PUBLISHPROFILE_5DDF08D7A058405FA3ABD162612E522A' # Change this to your function app name (eg cippdh4ch)
+          app-name: 'cippg6a4z' # Change this to your function app name (eg cippdh4ch)
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX }} # Change this to your repository secret name
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5DDF08D7A058405FA3ABD162612E522A }} # Change this to your repository secret name
